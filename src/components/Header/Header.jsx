@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Style from "./Header.module.scss"
 
 const items = [
   { href: "/", label: "Home" },
@@ -8,12 +9,12 @@ const items = [
 ];
 
 export const Header = () => (
-  <header style={{ display: "flex" }}>
-    <h1>Title</h1>
-    <nav>
+  <header className={Style.header}>
+    <div className={Style.title}>Title</div>
+    <nav className={Style.nav}>
       {items.map((item) => (
         <Link key={item.href} href={item.href}>
-          <a style={{ display: "inline-block", padding: 12 }}>{item.label}</a>
+          <a>{item.label}</a>
         </Link>
       ))}
     </nav>
