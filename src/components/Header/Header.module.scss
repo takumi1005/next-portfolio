@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  height: 96px;
+  width: 100%;
+  background-color: #000;
+  z-index: 99;
+  .name {
+    align-items: center;
+    font-size: 72px;
+    color: #616161;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    li {
+      margin-right: 48px;
+      :hover {
+        opacity: 0.8;
+      }
+      p {
+        margin: 0;
+      }
+      a {
+        color: #795548;
+      }
+    }
+  }
+}

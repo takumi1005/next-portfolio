@@ -96,7 +96,7 @@ export default function Home() {
             margin-right: 40px;
           }
           a:hover {
-            opacity: 0.8;
+            opacity: 0.7;
           }
         `}</style>
       </div>
